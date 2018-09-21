@@ -7,9 +7,9 @@
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise:
+#   Exercise: 5
 #     Source: Python Programming
-#    Chapter:
+#    Chapter: 2
 #
 # Program Description
 #   This program converts temperature from Celsius to Fahrenheit

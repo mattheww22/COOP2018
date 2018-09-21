@@ -1,15 +1,15 @@
 # U02_Ex10_KilosToMiles.py
 #
-# Author:
+# Author: Matthew Wiggans
 # Course: Coding for OOP
 # Section: A3
 #     Date: 31 Aug 2018
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise:
+#   Exercise: 10
 #     Source: Python Programming
-#    Chapter:
+#    Chapter: 2
 #
 # Program Description
 #   This program converts Kilometers into Miles!!
@@ -25,9 +25,14 @@
 
 def main():
 
+    #   Take Kilometers from the user
     print("This program converts kilometers to miles!")
-    kilometers = eval(input("Enter °kilometers to convert:"))
+    kilometers = eval(input("Enter °kilometers to convert: "))
+
+    #   Calculate num of miles using .62
     miles = kilometers * .62
+
+    #   Print Miles
     print(miles)
 
 
