@@ -1,18 +1,18 @@
 # U03_Ex03_MolWeight.py
 #
-# Author:
+# Author: Matthew Wiggans
 # Course: Coding for OOP
 # Section: A3
 #     Date: 25 Sep 2018
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise:
+#   Exercise: 3
 #     Source: Python Programming
-#    Chapter:
+#    Chapter: 3
 #
 # Program Description
-#
+# This program calculates the molecular weight of a molecule.
 #
 #
 #
