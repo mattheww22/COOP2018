@@ -32,13 +32,13 @@ def main():
     # Loop until exit requested
     while True:
         # Get input
-        expr = eval(input("Please enter a mathematical expression to evaluate (0 to quit): "))
+        expr = input("Please enter a mathematical expression to evaluate (0 to quit): ")
         # Test for exit
-        if expr == 0:
+        if expr == "0":
             break
         # Evaluate mathematical expression
-
+        result = eval(expr)
         # Print result
-        print("", expr)
+        print("The expression", expr, "is equivalent to", result)
 
 main()
