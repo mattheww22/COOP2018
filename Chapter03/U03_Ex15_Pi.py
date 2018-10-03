@@ -47,6 +47,6 @@ for i in range(amount * 2):
         total == 4/i
         switch = 1
 
-    print("\n Pi is equal to: " str(total))
+    print("\n Pi is equal to: ", str(total))
 
 
