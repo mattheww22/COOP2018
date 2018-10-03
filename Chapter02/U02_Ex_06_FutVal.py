@@ -12,7 +12,7 @@
 #    Chapter: 2
 #
 # Program Description
-#
+# This program will calculate the future value of a bank account.
 #
 #
 # Algorith (pseudocode)
