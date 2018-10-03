@@ -12,16 +12,28 @@
 #    Chapter: 2
 #
 # Program Description
-#   This program will average out exam 
+#   This program will average out exam scores.
 #
 #
 # Algorith (pseudocode)
 #
-#
-#
-#
+#   Explain program
+#   Get 3 exam scores from user
+#   Calculate average (a + b + c / 3)
+#   Print average
 #
 
 def main():
-    print ("This program will average your exam scores")
-    average = eval(input "Enter your exam scores: ")
+    #   Explain program
+    print("This program will average your exam scores")
+
+    #   Get 3 exam scores from user
+    a,  b,  c = eval(input("Enter your three exam scores separated by commas: "))
+
+    #   Calculate average (a + b + c / 3)
+    sum = a + b + c
+    average = sum / 3
+
+    #   Print average
+    print(average, "is your exam average.")
+main()
