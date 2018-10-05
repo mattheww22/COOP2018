@@ -33,20 +33,22 @@
 #
 import math
 
+
 def main():
-amount = input
-switch = 1
-total = 0
+    amount = int(input("Type your number: "))
+    switch = 1
+    total = 0
 
-for i in range(amount * 2):
-    if i !=0 and i%2 !=0:
-        if switch ==1:
-            total += 4/i
-            switch = 2
-    elif switch == 2:
-        total == 4/i
-        switch = 1
+    for i in range(amount * 2):
+        if i !=0 and i%2 !=0:
+            if switch ==1:
+                total += 4/i
+                switch = 2
+        elif switch == 2:
+            total = 4/i
+            switch = 1
 
-    print("\n Pi is equal to: ", str(total))
+        print("\n Pi is equal to: ", str(total))
 
 
+main()
