@@ -18,7 +18,7 @@
 #
 # Algorith (pseudocode)
 #   Take Kilometers from the user
-#   Calculate num of miles using .62
+#   Calculate num of miles (kilometers * .62)
 #   Print Miles
 #
 #
@@ -29,11 +29,11 @@ def main():
     print("This program converts kilometers to miles!")
     kilometers = eval(input("Enter °kilometers to convert: "))
 
-    #   Calculate num of miles using .62
+    #   Calculate num of miles (kilometers * .62)
     miles = kilometers * .62
 
     #   Print Miles
-    print(miles)
+    print(kilometers, "is equal to: ", miles, "miles")
 
 
 main()
