@@ -2,9 +2,10 @@
 
 ## Ready to be reviewed
 
-* FileName
+* Exercise 1
+* Exercise 10
 
 ## In progress
 
-* Other stuff
+* None
 
