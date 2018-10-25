@@ -7,9 +7,9 @@
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise: 1
+#   Exercise: 01
 #     Source: Python Programming
-#    Chapter: 4
+#    Chapter: 04
 #
 # Program Description
 #
