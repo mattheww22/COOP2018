@@ -13,14 +13,15 @@
 #
 # Program Description
 #
-#
+# This program prints a rectangle that follows your mouse when you click.
 #
 #
 # Algorith (pseudocode)
 #
-#
-#
-#
+#   Create a red circle
+#   Draw the circle
+#   Find the mouse
+#   Re-draw the circle on top of the mouse
 #
 
 from graphics import *
@@ -37,7 +38,7 @@ def main():
         c = shape.getCenter()
         dx = p.getX() - c.getX()
         dy = p.getY() - c.getY()
-        shape.move(dx,dy)
+        shape.move(dx, dy)
     win.close()
 
 main()
