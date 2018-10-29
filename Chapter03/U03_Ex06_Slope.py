@@ -18,7 +18,20 @@
 #
 # Algorith (pseudocode)
 #
+# Get two points in the separated by commas
+# add up a + c and b + d
+# Print slope
 #
-#
-#
-#
+
+def main():
+
+print("This program finds the slope of a line.")
+a, b, c, d = eval(input("What are your four values?"))
+aa = c - a
+bb = d - b
+
+slope = bb / aa
+
+print(slope, " is your slope.")
+
+main()
