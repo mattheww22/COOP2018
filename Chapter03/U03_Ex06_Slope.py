@@ -25,13 +25,13 @@
 
 def main():
 
-print("This program finds the slope of a line.")
-a, b, c, d = eval(input("What are your four values?"))
-aa = c - a
-bb = d - b
+    print("This program finds the slope of a line.")
+    a, b, c, d = eval(input("What are your four values?"))
+    aa = c - a
+    bb = d - b
 
-slope = bb / aa
+    slope = bb / aa
 
-print(slope, " is your slope.")
+    print(slope, " is your slope.")
 
 main()
