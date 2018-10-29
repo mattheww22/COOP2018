@@ -33,7 +33,7 @@ def main():
     miles = kilometers * .62
 
     #   Print Miles
-    print(kilometers, "is equal to: ", miles, "miles")
+    print(kilometers, "kilometers is equal to: ", miles, "miles")
 
 
 main()
