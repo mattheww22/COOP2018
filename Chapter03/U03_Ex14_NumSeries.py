@@ -13,12 +13,23 @@
 #
 # Program Description
 
-#
+# THis program prints the average of a series of numbers
 #
 #
 # Algorith (pseudocode)
 #
+# Ask user how many numbers there are
+# average numbers
 #
 #
-#
-#
+
+def main():
+
+    print("This program prints the average of a series of numbers")
+    n = eval(input("How many numbers are you averaging?"))
+    a, b, c, d, e = eval(input("What are the numbers you want to average?"))
+    sum = a + b + c + d + e
+    average = sum / n
+    print(average, "is your average")
+
+main()
