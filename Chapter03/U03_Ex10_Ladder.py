@@ -18,11 +18,12 @@
 #
 # Algorith (pseudocode)
 #
+#   Get length and deg from user
+#   Convert deg to radians using pi/180* deg
 #
 #
 #
 #
-
 from math import pi
 
 def main():
