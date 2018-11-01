@@ -31,13 +31,16 @@ def main():
     print("This program will calculate APR with certain periods.")
 
     #   Get principal, APR and periods from user
-    principal, apr, periods = eval(input("Enter the principal, APR (As a decimal), and periods (separated by commas): "))
+    principal, apr, periods = eval(
+        input("Enter the principal, APR (As a decimal), and periods (separated by commas): "))
 
     #   Repeat (10 * periods) times:
     for i in range(years * periods):
-        #Calculate new principal(principal=principal * (1 + apr / periods))
+        # Calculate new principal(principal=principal * (1 + apr / periods))
         principal = principal * (1 + (apr / periods))
 
     #   Output value of principal
     print(principal)
+
+
 main()
