@@ -17,6 +17,8 @@
 #
 #
 # Algorith (pseudocode)
+#
+# Print program description
 # Get input of radius
 # Calculate volume using (4/3(π)r2)
 # Calculate surface area (4(π)r2)
@@ -25,6 +27,8 @@
 
 
 def main():
+
+    print("This program calculates the volume and surface area of a cylinder using the radius.")
 
 # Get input of radius
     radius = int(input("Enter Radius"))
@@ -36,7 +40,7 @@ def main():
     sa = 4 * 3.14 * radius**2
 
 # Print calculated volume and SA
-    print("Your volume is: ", volume, "Your surface area is: ", sa)
+    print("Your volume is: ", volume, "and your surface area is: ", sa, "for a sphere of with the radius of:", radius)
 
 
 main()
