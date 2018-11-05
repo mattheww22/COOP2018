@@ -13,13 +13,14 @@
 #
 # Program Description
 #
-#   This
+#   This program converts Celsius to Fahrenheit
 #
 #
 # Algorith (pseudocode)
 #
-#
-#
+#   Get input from user
+#   Calculate fahrenheit using (9/5 * celsius + 32)
+#   Print the fahrenheit temperature
 #
 #
 
@@ -27,6 +28,7 @@ def main():
 
     for i in range(5):
 
+        print("This program converts Celsius to Fahrenheit.")
         celsius = eval(input("What is the Celsius temperature?"))
         farenheit = 9/5 * celsius + 32
         print("The temperature is ", farenheit, "degrees farenheit")
