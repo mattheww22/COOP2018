@@ -7,7 +7,7 @@
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise: 5
+#   Exercise: 3
 #     Source: Python Programming
 #    Chapter: 2
 #
