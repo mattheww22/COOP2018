@@ -12,7 +12,8 @@
 #    Chapter: 2
 #
 # Program Description
-#   This program converts Kilometers into Miles!!
+#
+#   This program converts Kilometers into Miles
 #
 #
 #
