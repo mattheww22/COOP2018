@@ -26,11 +26,13 @@
 #
 from math import pi
 
-def main():
 
+def main():
     print("This program finds the length of a ladder.")
     L, Deg = int(input("Enter your length and degrees of your ladder (Separated by commas): "))
     radians = pi / 180 * Deg
     height = L * radians
     print("Your ladder is ", height, "inches tall")
+
+
 main()
