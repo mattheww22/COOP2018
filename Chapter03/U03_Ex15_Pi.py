@@ -31,11 +31,10 @@
 #
 # Thanks for the help Will!!
 #
-import math
-
+from math import *
 
 def main():
-    amount = int(input("Type your number: "))
+    amount = int(input("Type the number of terms: "))
     switch = 1
     total = 0
 
@@ -48,7 +47,7 @@ def main():
             total = 4/i
             switch = 1
 
-        print("\n Pi is equal to: ", str(total))
+        print("\n Pi is equal to: ", str(total), "vs", pi)
 
 
 main()
