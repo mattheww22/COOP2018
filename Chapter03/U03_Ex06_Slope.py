@@ -18,20 +18,21 @@
 #
 # Algorith (pseudocode)
 #
-# Get two points in the separated by commas
-# add up a + c and b + d
-# Print slope
+# Print program description
+# Get four points in the separated by commas
+# add up a + c and b + d then divide them
+# Print slope and the original points
 #
 
 def main():
 
     print("This program finds the slope of a line.")
-    a, b, c, d = eval(input("What are your four values?"))
-    aa = c - a
-    bb = d - b
+    x1, y1, x2, y2 = eval(input("Please enter your coordinates (x1, y1, x2, y2) "))
+    x = x2 - x1
+    y = y2 - y1
 
-    slope = bb / aa
+    slope = y / x
 
-    print(slope, " is your slope.")
+    print(slope, " is the slope of ", x1, y1, x2, y2)
 
 main()
