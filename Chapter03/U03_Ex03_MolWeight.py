@@ -26,8 +26,11 @@
 def main():
 
     print("This program calculates the molecular weight of a carbohydrate.")
-    hydrogen, carbon, oxygen = eval(input())
+    hydrogen, a, carbon, b, oxygen, c = eval(input("What are the weights of the elements and the number of those elements? "))
+    hydrogen = hydrogen * a
+    carbon = carbon * b
+    oxygen = oxygen * c
     weight = hydrogen + carbon + oxygen
-    print(weight, " grams per mole")
+    print(weight, " grams per mole for this Carbohydrate")
 
 main()
