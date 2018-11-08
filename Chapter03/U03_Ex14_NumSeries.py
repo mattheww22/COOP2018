@@ -23,13 +23,17 @@
 #
 #
 
-def main():
 
+def main():
     print("This program prints the average of a series of numbers")
-    n = eval(input("How many numbers are you averaging?"))
-    a, b, c, d, e = eval(input("What are the numbers you want to average?"))
-    sum = a + b + c + d + e
-    average = sum / n
-    print(average, "is your average")
+    n = int(input("How many numbers are you averaging?"))
+    total = 0
+    print()
+    for i in range(n):
+        num2 = int(input("Please enter another number to be averaged: "))
+        total += num2
+    avg = total / count
+    print("The average of these numbes is, ", avg)
+
 
 main()
