@@ -18,7 +18,7 @@
 #
 # Algorith (pseudocode)
 #
-# Print the natural numbers
+# Print the sum of n natural numbers
 #
 #
 #
@@ -31,7 +31,9 @@ def main():
     for i in range(n):
         amount = amount + 1
 
-        print(amount)
+
+
+    print(amount)
 
 
 main()
