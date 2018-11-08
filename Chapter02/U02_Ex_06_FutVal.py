@@ -16,31 +16,22 @@
 #
 #
 # Algorith (pseudocode)
-#   Print program description
-#   Get principal, APR and periods from user
-#   Repeat (10 * periods) times:
-#       Calculate new principal (principal = principal * (1 + (apr/ periods)))
-#   Output value of principal
+#
 #
 #
 #
 def main():
-    years = 10
 
-    # Print program description
-    print("This program will calculate APR with certain periods.")
+    print("This program calculates the future value")
+    print("of a 10-year investment.")
 
-    #   Get principal, APR and periods from user
-    principal, apr, periods = eval(
-        input("Enter the principal, APR (As a decimal), and periods (separated by commas): "))
+    principal = eval(input("Enter the initial principal: "))
+    apr = eval(input("Enter the annual interest rate: "))
+    n = int(input("How many years are you tracking? "))
 
-    #   Repeat (10 * periods) times:
-    for i in range(years * periods):
-        # Calculate new principal(principal=principal * (1 + apr / periods))
-        principal = principal * (1 + (apr / periods))
+    for i in range(n):
+        principal = principal * (1 + apr)
 
-    #   Output value of principal
-    print(principal)
-
+    print("The value in 10 years is ", principal)
 
 main()
