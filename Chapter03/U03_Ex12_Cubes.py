@@ -26,9 +26,10 @@ def main():
     amount = 0
 
     for i in range(n):
-        amount = amount + 1 ** 3
+        amount = amount + 1
+        amount = amount ** 3
 
-        print(amount)
+    print(amount, "is the sum of the cubes of these numbers.")
 
 
 main()
