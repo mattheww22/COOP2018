@@ -13,7 +13,7 @@
 #
 # Program Description
 #
-#   Draws an archery
+#   Draws an archery target with circles that are half of the previous one
 #
 #
 # Algorith (pseudocode)
@@ -29,14 +29,15 @@ from graphics import *
 
 def main(winSide):
     win = GraphWin("Target", winSide, winSide)
-    radius = win.getWidth()/12
-    center = Point(win.getWidth()/2, win.getHeight()/2)
-    circles = makeCircle(center, radius*5, "white"),
-              makeCircle(center, radius *4, "black"),
-              makeCircle(center, radius*3, "blue"),
-              makeCircle(center, radius*2, "red"),
+    radius = win.getWidth() / 12
+    center = Point(win.getWidth() / 2, win.getHeight() / 2)
+    circles = makeCircle(center, radius * 5, "white"),
+    makeCircle(center, radius * 4, "black"),
+    makeCircle(center, radius * 3, "blue"),
+    makeCircle(center, radius * 2, "red"),
     for circle in circles:
         circle.draw(win)
+
 
 def makeCircle(c, r, color):
     """
@@ -51,5 +52,8 @@ def makeCircle(c, r, color):
     circ.setOutline("black")
     circ.setFill(color)
     return circ
-main(600)
+
+
 input("Press <Enter> to close graphics window")
+
+main(600)
