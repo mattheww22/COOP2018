@@ -83,4 +83,13 @@ def main():
 
     win.getMouse()
 
+def getMouseClick(win, center, prompt):
+        prompt = Text(center, prompt)
+        prompt.setSize(14)
+        prompt.setStyle("bold")
+        prompt.draw(win)
+        p1 = win.getMouse()
+        prompt.undraw()
+        return p1
+
 main()
