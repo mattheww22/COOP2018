@@ -13,14 +13,14 @@
 #
 # Program Description
 #
-#   This program draws a face using circles and
+#   This program draws a face using circles and a line for a mouth
 #
 #
 # Algorith (pseudocode)
 #
-#
-#
-#
+#   Draw face
+#   Draw eyes
+#   Draw nose
 #
 
 from graphics import *
@@ -70,21 +70,23 @@ def drawEyes(win):
     rightEye.draw(win)
 
 
-def drawNose():
+def drawNose(win):
     """
 
     Make circle in center of face
     :return:
     """
-    nose = makeCircle(Point(400, 400),50, "black")
+    nose = makeCircle(Point(200, 200), 50, "blue")
     nose.draw(win)
 
-def drawMouth():
+def drawMouth(win):
 
     """
-
-    :return:
+    Draw a line in the bottom half of the circle for mouth
+    :return: Line
     """
 
+    mouth = makeCircle(Point(200, 300), 75, "black")
+    mouth.draw(win)
 
 main()
