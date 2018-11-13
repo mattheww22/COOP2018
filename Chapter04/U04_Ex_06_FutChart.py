@@ -27,16 +27,16 @@ from graphics import *
 
 def main():
 
-    win = GraphWin("Investment Growth Chart", 320, 240)
+    principal = int(input("What is your principal? "))
+
+    Rate = int(input("What is your rate? "))
+
+    win = GraphWin("Investment  Chart", 320, 240)
     win.setBackground("white")
-    win.setCoords(0, 0, 10, 10)
+    win.setCoords(-10, -10, 10, 10)
 
     Intro = Text(Point(5, 8), "This plots a chart of a 10 year investment plan.")
     Intro.draw(win)
-
-    inputPrincipal = Entry(Point(8, 5), 10)
-    inputPrincipal.setText("0.0")
-    inputPrincipal.draw(win)
 
     Principal = Entry(Point(3, 5), "Enter the first principal")
     Principal.setText("0.0")
