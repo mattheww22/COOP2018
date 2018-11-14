@@ -1,0 +1,23 @@
+Matthew Wiggans
+
+Algorithm:
+check_fermat:
+
+    get inputs of a, b, c and n from main
+    proceed to check_fermat
+    a = a ** n
+    b = b ** n
+    c = c ** n
+    ab = a + b
+    if ab = c print false
+    if ab does not equal c, print true
+
+main:
+
+    print introduction
+    get inputs of a, b, c and n from user
+    if n is greater than 2, check_fermat
+    if false
+        print: "Holy smokes, Fermat was Wrong!"
+    if true
+        print "No, that doesn't work"
