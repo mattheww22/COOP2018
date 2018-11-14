@@ -1,15 +1,15 @@
 # Question_56.py
 #
-# Author:
+# Author: Matthew Wiggans
 # Course: Coding for OOP
 # Section: A3
 #     Date: 14 Nov 2018
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise:
+#   Exercise: N/A
 #     Source: Python Programming
-#    Chapter:
+#    Chapter: N/A
 #
 # Program Description
 #
