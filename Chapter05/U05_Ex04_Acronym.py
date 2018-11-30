@@ -26,14 +26,14 @@
 def main():
     print("This program makes an acronym out of any string of words you want")
 
-    acroStr = input("What are the words you want to be turned into acronyms? ")
+    words = input("What are the words you want to be turned into acronyms? ").split()
 
-    words = acroStr.split(' ')
-    acronym = ' '
+    acronym = ''
 
     for word in words:
+
         acronym += word[0].upper
-        print(acronym, "is the acronym for ", acroStr)
+        print(acronym, "is the acronym for ", words)
 
 
 main()
