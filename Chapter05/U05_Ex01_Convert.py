@@ -34,7 +34,6 @@ def main():
               "September", "October", "November", "December"]
     monthStr = months[int(monthStr) - 1]
 
-    print("The converted date is", monthStr, dayStr, yearStr)
-
+    print("The converted date is: {0} {1},{2}".format(monthStr, dayStr, yearStr))
 
 main()
