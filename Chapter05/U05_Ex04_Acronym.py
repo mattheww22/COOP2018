@@ -32,7 +32,7 @@ def main():
 
     for word in words:
 
-        acronym += word[0].upper
+        acronym += word[0].upper()
         print(acronym, "is the acronym for ", words)
 
 
