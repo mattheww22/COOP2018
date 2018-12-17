@@ -24,13 +24,13 @@
 #
 def main():
     print("This program converts number grades to letter grades.")
-    gradeStr = input('What is the number grade of your exam? ')
+    gradeStr = int(input('What is the number grade of your exam? '))
 
     myGrade = 'F' * 60 + 'D' * 10 + 'C' * 10 + 'B' * 10 + 'A' * 11
 
-    myGrade = gradeStr
+    myGrade = myGrade[gradeStr]
 
-    print(myGrade, "is your letter grade.")
+    print('Your letter grade is {}'.format(myGrade))
 
 
 main()
