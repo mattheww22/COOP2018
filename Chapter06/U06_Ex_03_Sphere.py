@@ -24,8 +24,26 @@
 #   Print both using .format
 #
 import math
+
+
 def main():
-
     print("This program prints the surface area of a sphere")
+    r = int(input("What is the radius of your sphere? "))
+    surf = getSurface(r)
+    print("{0} is the surface area of your sphere.".format(surf))
+    volume = getVol(r)
+    print("{0} is the volume of your sphere.".format(volume))
 
-main()
+
+def getSurface(r):
+    surf = 4 * 3.14 * r ** 2
+    return surf
+
+
+def getVol(r):
+    volume = 4 / 3 * 3.14 * r ** 2
+    return volume
+
+
+if __name__ == '__main__':
+    main()
