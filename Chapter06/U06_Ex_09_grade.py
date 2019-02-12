@@ -1,4 +1,4 @@
-# U06_Ex_09_MacDonald.py
+# U06_Ex_09_grade.py
 #
 # Author: Matthew Wiggans
 # Course: Coding for OOP
@@ -7,13 +7,13 @@
 #      IDE: PyCharm
 #
 # Assignment Info
-#   Exercise: 04
+#   Exercise: 09
 #     Source: Python Programming
-#    Chapter: 09
+#    Chapter: 06
 #
 # Program Description
 #
-#   This program prints the surface area and volume of at sphere using a given radius
+#   This program gets a number grade from the user and returns a letter grade.
 #
 # Algorith (pseudocode)
 #
@@ -25,11 +25,13 @@
 #
 #
 
+
 def main():
 
     print("This program converts number grades to letter grades.")
     gradeStr = int(input('What is the number grade of your exam? '))
     getLetter(gradeStr)
+
 
 def getLetter(gradeStr):
     myGrade = 'F' * 60 + 'D' * 10 + 'C' * 10 + 'B' * 10 + 'A' * 11
@@ -37,5 +39,6 @@ def getLetter(gradeStr):
     myGrade = myGrade[gradeStr]
 
     print('Your letter grade is {}'.format(myGrade))
+
 
 main()
