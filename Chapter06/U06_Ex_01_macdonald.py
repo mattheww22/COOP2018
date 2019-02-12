@@ -23,11 +23,23 @@
 #  Print each song using the animals given by the user
 
 def main():
-
     print("This program prints 'Old MacDonald' for five different animals given by the user")
-    an1, s1, an2, s2, an3, s3, an4, s4, an5, s5 = input("Enter the 5 animals and noises you want in the song separated by commas: ")
-    print("Old MacDonald had a farm Ee-igh, Ee-igh, Oh!")
-    print("And on that farm he had a {0}, Ee-igh, Ee-igh, Oh!".format(an1))
-    print("With a {1}{1} here and a {1}{1} there".format(s1, s1))
+
+    animals = input("Enter the 5 animals that you want in the song separated by commas: ")
+    animals = animals.split(",")
+
+    sounds = input("Enter the sounds these animal's make: ")
+    sounds = sounds.split(",")
+
+    size = len(animals)
+
+    for i in range(size):
+        print(" ")
+        print("Old MacDonald had a farm Ee-igh, Ee-igh, Oh!")
+        print("And on that farm he had a {0}, Ee-igh, Ee-igh, Oh!".format(animals[i]))
+        print("With a {1} {1} here and a {1} {1} there".format(sounds[i], sounds[i]))
+        print("Here a {1}, there a {1}, Ee-igh, Ee-igh, Oh!".format(sounds[i], sounds[i]))
+        print(" ")
+
 
 main()
