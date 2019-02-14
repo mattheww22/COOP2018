@@ -22,7 +22,8 @@
 #  Get five different animals from user
 #  Send animal info to func
 #       Create a loop that chooses a different animal and sound from the list
-#       Print each song verse using .format
+#       Print each song verse using .format except for the first and last line where you call firstLine
+#           print the first line of the song whenever called
 
 def main():
     print("This program prints 'Old MacDonald' for five different animals given by the user")
