@@ -41,11 +41,16 @@ def makeSong(animals, sounds):
 
     for i in range(size):
         print(" ")
-        print("Old MacDonald had a farm Ee-igh, Ee-igh, Oh!")
+        firstLine()
         print("And on that farm he had a {0}, Ee-igh, Ee-igh, Oh!".format(animals[i]))
         print("With a {1} {1} here and a {1} {1} there".format(sounds[i], sounds[i]))
         print("Here a {1}, there a {1}, everywhere a {1} {1}".format(sounds[i], sounds[i]))
+        firstLine()
         print(" ")
+
+
+def firstLine():
+    print("Old MacDonald had a farm Ee-igh, Ee-igh, Oh!")
 
 
 main()
