@@ -20,7 +20,9 @@
 #
 #  Introduce program
 #  Get five different animals from user
-#  Print each song using the animals given by the user
+#  Send user info to func
+#       Create a loop that chooses a different animal and sound from the list
+#       Print each song verse
 
 def main():
     print("This program prints 'Old MacDonald' for five different animals given by the user")
