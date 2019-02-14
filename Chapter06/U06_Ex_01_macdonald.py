@@ -31,6 +31,10 @@ def main():
     sounds = input("Enter the sounds these animal's make: ")
     sounds = sounds.split(",")
 
+    makeSong(animals, sounds)
+
+
+def makeSong(animals, sounds):
     size = len(animals)
 
     for i in range(size):
@@ -38,7 +42,7 @@ def main():
         print("Old MacDonald had a farm Ee-igh, Ee-igh, Oh!")
         print("And on that farm he had a {0}, Ee-igh, Ee-igh, Oh!".format(animals[i]))
         print("With a {1} {1} here and a {1} {1} there".format(sounds[i], sounds[i]))
-        print("Here a {1}, there a {1}, Ee-igh, Ee-igh, Oh!".format(sounds[i], sounds[i]))
+        print("Here a {1}, there a {1}, everywhere a {1} {1}".format(sounds[i], sounds[i]))
         print(" ")
 
 
