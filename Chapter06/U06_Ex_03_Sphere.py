@@ -19,16 +19,17 @@
 #
 #   Print introduction
 #   Get radius from user
-#   Calculate the radius of the sphere
-#   Calculate the surface area of the sphere
+#   Send radius to getSurface
+#       Calculate surface area using 4 * 3.14 * r ** 2
+#   Send radius to getVol
+#       Calculate volume using 4 / 3 * 3.14 * r ** 2
 #   Print both using .format
 #
-import math
-
+from math import *
 
 def main():
     print("This program prints the surface area of a sphere")
-    r = int(input("What is the radius of your sphere? "))
+    r = float(input("What is the radius of your sphere? "))
     surf = getSurface(r)
     print("{0} is the surface area of your sphere.".format(surf))
     volume = getVol(r)
@@ -36,12 +37,12 @@ def main():
 
 
 def getSurface(r):
-    surf = 4 * 3.14 * r ** 2
+    surf = 4 * pi * r ** 2
     return surf
 
 
 def getVol(r):
-    volume = 4 / 3 * 3.14 * r ** 2
+    volume = 4 / 3 * pi * r ** 3
     return volume
 
 
