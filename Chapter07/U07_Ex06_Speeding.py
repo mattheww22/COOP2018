@@ -37,6 +37,8 @@ Algorithm
 
 
 """
+
+
 def main():
     print("Welcome to Podunkville This program checks to see if you were speeding and what your fine would be.")
     limit = int(input("What was the speed limit? "))
@@ -48,8 +50,8 @@ def main():
     else:
         print("You were speeding!! Your fine will be ${0}".format(fine))
 
-def speedCheck(limit, MPH):
 
+def speedCheck(limit, MPH):
     if MPH > limit:
         fine = 50
         over = MPH - limit
@@ -66,6 +68,6 @@ def speedCheck(limit, MPH):
         fine = 1
     return fine
 
-if __name__ == '__main__':
 
+if __name__ == '__main__':
     main()
