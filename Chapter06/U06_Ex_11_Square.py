@@ -14,13 +14,15 @@ Assignment Info
 
 Program Description
 
-    This program accepts a list of numbers and prints their square root.
+    This program accepts a list of numbers and prints their squared values.
 
 Algorithm
 
     Get nums from user
-    Send nums to program
-    Square each number
+    Send nums to func
+        Make each number an integer
+        Square each number
+        Return squared value
     Print list of squared numbers
 
 """
@@ -29,14 +31,14 @@ Algorithm
 def main():
     print("This program gets the squared result of a list of numbers entered by the user.")
     nums = input("What numbers do you want squared? ")
-    squared, num = square(nums)
-    print("{0} is the squared result of {1}".format(squared, num))
+    nums = nums.split(" ")
+    squareEach(nums)
+    print("{0} is the squared result of your numbers".format(nums))
 
 
-def square(nums, ):
-    for num in nums:
-        squared = num ** 2
-        return num, squared
-
+def squareEach(nums):
+    for i in range(len(nums)):
+        num = int(nums[i])
+        nums[i] = num ** 2
 
 main()
