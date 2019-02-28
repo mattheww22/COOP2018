@@ -13,7 +13,7 @@
 #
 # Program Description
 #
-#   This program returns the sum of the first "n" natural numbers and the first
+#   This program returns the sum of the first "n" natural numbers and the sum of the first "n" natural numbers cubed
 #
 # Algorith (pseudocode)
 #
