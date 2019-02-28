@@ -13,26 +13,31 @@
 #
 # Program Description
 #
-#   This program calculates the number of words in a sentence.
+#   This program calculates the number of words in a sentence entered by the user.
 #
 #
 # Algorith (pseudocode)
-#   Get input of sentence
-#   calculate number of words by splitting on ' '
-#   print number of words
-#
-#
+#   Print intro
+#   Get input of sentence from the user
+#   Send sentence to func
+#   Initialize value
+#   Split sentence into words on the spaces
+#   Loop through the words
+#       Add 1 to value each time
+#   Return value
+#   Print value
+
+
 def main():
-    print('This sentence counts the number of words in a sentence.')
+    print('This program counts the number of words in a sentence.')
     words = input('Enter your sentence: ')
-    numWord = words.split()
-    Acc = 0
-        for word in words():
+    value = calcWords(words)
+    print("There are {0} words in your sentence.".format(value))
 
-            for char in word()
-
-                Acc = Acc + (ord - 97)
-
-    print("The value of your string is ", Acc)
-
+def calcWords(words):
+    value = 0
+    numWord = words.split(" ")
+    for i in range(len(numWord)):
+        value = value + 1
+    return value
 main()
