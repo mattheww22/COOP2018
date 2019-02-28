@@ -14,31 +14,33 @@ Assignment Info
 
 Program Description
 
-    This program turns a string given by the user into a number.
+    This program turns a string of numbers given by a user into a list of integers.
 
 Algorithm
 
     Get string numbers from the user
-    Send to transfer function
+    Split strList into a list of strings
+    Send to toNumbers function
         transfer the str to int
-
+        Return int list to main
     print int
 """
 
 
 def main():
     print("This program turns a string given by the user into a number.")
-    nums = input("Please enter the numbers that you want to have converted. (separated by spaces) ")
-    nums = nums.split(" ")
-    transfer(nums)
-    print(nums)
+    strList = input("Please enter the numbers that you want to have converted. (separated by spaces) ")
+    strList = strList.split(" ")
+    toNumbers(strList)
+    print("Your number(s) in integer form are: {0}".format(strList))
 
 
-def transfer(nums):
-    for num in nums:
+def toNumbers(strList):
+    for num in strList:
 
         num = int(num)
 
 
+if __name__ == '__main__':
 
-main()
+    main()
