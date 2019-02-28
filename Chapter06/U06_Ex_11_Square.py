@@ -19,6 +19,7 @@ Program Description
 Algorithm
 
     Get nums from user
+    Split into list using spaces
     Send nums to func
         Make each number an integer
         Square each number
