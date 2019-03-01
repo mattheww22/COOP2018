@@ -38,7 +38,7 @@ def main():
     f.close()
     charNum, wordNum = getLines(phr)
 
-    print("There are {0} lines, {1} words, and {2} characters".format(len(phr), charNum, wordNum))
+    print("There are {0} lines, {1} words, and {2} characters in your sentence.".format(len(phr), charNum, wordNum))
 
 def getLines(phr):
     wordNum = 0
