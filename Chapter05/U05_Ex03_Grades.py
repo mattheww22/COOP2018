@@ -18,8 +18,10 @@
 #
 # Algorith (pseudocode)
 #
+#   Print introduction
 #   Get input of number grade from user.
-#   Convert the number to a letter grade
+#   Create string of all grades
+#   Parse the string and find the correct letter corresponding to the number
 #   Print letter grade
 #
 def main():
