@@ -34,4 +34,4 @@ def main():
 def dayNumber(date):
     month, day = date.split(" ")
     myNum = "Jan" * 31, "Feb" * 28, "Mar" * 31, "Apr" * 30, "May" * 31, "Jun" * 30, "Jul" * 31, "Aug" * 30 * "Sep" * 31, "Oct" * 31, "Nov" * 30, "Dec" * 31
-    myNum = myNum[month, ]
+    myNum = myNum[month, day]
