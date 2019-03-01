@@ -19,9 +19,9 @@
 # Algorith (pseudocode)
 #
 #  Introduce program
-#  Get five different animals from user
-#  Send animal info to func
-#       Create a loop that chooses a different animal and sound from the list
+#  Get five different animals and sounds from user
+#  Send animal and sound info to func
+#       Create a loop that chooses a different animal and its corresponding sound from the list
 #       Print each song verse using .format except for the first and last line where you call firstLine
 #           print the first line of the song whenever called
 
