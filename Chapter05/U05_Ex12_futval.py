@@ -15,32 +15,34 @@
 #
 # Program Description
 #
-#   This program makes a chart of all of the future values
+#   This program makes a chart of all of the future values of a bank account with compound intrest.
 #
 #
 # Algorith (pseudocode)
 #
-#   Calculate fut value
-#   print year then value
-#   Repeat
+#   Print introduction
+#   Get the initial value of the account, apr, and years from user
+#   Print heading
+#   Loop through however many years user is tracking
+#       principal = principal * (1 + apr)
+#       Print results with year first, then principal
 #
 def main():
-
 
     print("This program calculates the future value")
     print("of a 10-year investment.")
 
-    principal = eval(input("Enter the initial principal: "))
-    apr = eval(input("Enter the annual interest rate: "))
+    principal = float(input("Enter the initial principal: "))
+    apr = float(input("Enter the annual interest rate: "))
     years = int(input("How many years are you tracking? "))
 
     print('Year\t Value')
 
     print("-------------")
+    for i in range(years):
 
-    for year in range(years):
         principal = principal * (1 + apr)
 
-    print('{0}\t${1:.2}'.format(year+1, principal))
+        print('   {0}\t  ${1}'.format(i+1, principal / 10))
 
 main()
