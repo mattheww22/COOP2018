@@ -31,13 +31,13 @@ Algorithm
 
 def main():
     print("This program gets the squared result of a list of numbers entered by the user.")
-    nums = input("What numbers do you want squared? ")
-    nums = nums.split(" ")
+    nums = input("What numbers do you want squared? ").split(" ")
     squareEach(nums)
     print("{0} is the squared result of your numbers".format(nums))
 
 
 def squareEach(nums):
+
     for i in range(len(nums)):
         num = int(nums[i])
         nums[i] = num ** 2
