@@ -13,21 +13,30 @@
 #
 # Program Description
 #
-# This program computes the number of fibonacci numbers defined by a user.
+#   This program computes the "n"th fibonacci number that is specified by the user.
 #
 # Algorith (pseudocode)
 #
-#   print program description
-#   Get input of number of sequences
-#   if terms is 1 print 1
-#   if terms = 2 print 1 1
-#   if else, compute other terms, print as you go
+#   Print program description
+#   Get the nth fibonacci number from the user
+#   Send n to func
+#       If n is 1 or 2
+#           output = 1
+#       Initialize variables
+#       Loop through for however big n is
+#           Add a and b together to get c
+#           Move all variables so c is still total and b can be added to next number
+#           Continue to add a and b together
+#       Return c
+#   Print nth fibonacci number
 #
 
 def main():
     print("This program prints the fibonacci sequence.")
-    n = int(input("How many numbers do you want? "))
-    fibonacci(n)
+    n = int(input("Which fibonacci number do you want? "))
+    c = fibonacci(n)
+
+    print(c, end=" ")
 
 
 def fibonacci(n):
@@ -41,7 +50,7 @@ def fibonacci(n):
         c = a + b
         a = b
         b = c
-    print(c, end=" ")
+    return c
 
 
 main()
