@@ -13,32 +13,33 @@
 #
 # Program Description
 #
-#   This program gets a number grade from the user and returns a letter grade.
+#   This program converts a number grade provided by the user into a letter grade.
 #
 # Algorith (pseudocode)
 #
 #
 #   Get input of number grade from user.
 #   Send input to getLetter
-#       Convert the number to a letter grade
-#       Print letter grade
+#       Initialize the string of grade letters
+#       Parse the string for the correct
+#       Return letter grade
+#   Print letter grade
 #
 #
 
 
 def main():
-
     print("This program converts number grades to letter grades.")
     gradeStr = int(input('What is the number grade of your exam? '))
-    getLetter(gradeStr)
-
+    Ltr = getLetter(gradeStr)
+    print('Your letter grade for {0}% is {1}'.format(gradeStr, Ltr))
 
 def getLetter(gradeStr):
-    myGrade = 'F' * 60 + 'D' * 10 + 'C' * 10 + 'B' * 10 + 'A' * 11
+    Ltr = 'F' * 60 + 'D' * 10 + 'C' * 10 + 'B' * 10 + 'A' * 11
 
-    myGrade = myGrade[gradeStr]
+    Ltr = Ltr[gradeStr]
 
-    print('Your letter grade is {}'.format(myGrade))
+    return Ltr
 
 
 main()
