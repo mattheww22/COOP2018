@@ -13,15 +13,24 @@
 #
 # Program Description
 #
-#   This program prints the numeric value of
+#   This program prints the numeric value of a phrase given to it.
 #
 #
 # Algorith (pseudocode)
 #
-#   Get input of name
-#   Change the name into a list of letters
-#   Translate the list of letters into unicode -27
-#   print total of name
+#   Print intro
+#   Get name from user
+#   Send to func
+#       Make the name lowercase
+#       Split it on the spaces
+#       Initialize the str of letters
+#       Initialize the value
+#       Loop through for as many letters in name
+#           Parse through, finding the letter and looking how far into the aphabet it is
+#           Add new value to previous value
+#       Return value
+#    Print value
+#
 
 def main():
     print("This program calculates the numeric value of your name.")
