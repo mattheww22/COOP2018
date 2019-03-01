@@ -31,7 +31,7 @@
 #       Return value
 #    Print value
 #
-
+#
 def main():
     print("This program calculates the numeric value of your name.")
     name = input('What is your name? ')
