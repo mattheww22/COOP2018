@@ -18,8 +18,10 @@
 # Algorith (pseudocode)
 #
 #   Get numeric input of date from user
-#   Convert the month number to an actual month name
-#   print converted date
+#   Split date into month, day, and year
+#   Initialize string of month names
+#   Convert the month number to an actual month name subtracting 1 to get accurate month
+#   Print converted date
 #
 
 def main():
