@@ -13,36 +13,41 @@
 #
 # Program Description
 #
-#   This program prints the average length of a word in a sentence.
+#   This program prints the average length of words in a sentence given by the user.
 #
 #
 # Algorith (pseudocode)
 #
-#   Get input of sentence
-#   get the length of each word
-#   average the lengths
-#
+#   Print intro
+#   Get input of sentence from user
+#   Send sentence to func
+#       Split into words by splitting on spaces
+#       Loop through each word
+#           Split into characters
+#           Get the length of each word
+#       average the lengths
+#       Return average
+#   Print average word length
 #
 #
 def main():
-    AvgWrdLth = 0
 
-    print('This program averages the words lengths of a sentence.')
-    sentence = input('Type the words you want to average: ')
-    words = sentence.split()
-    ttlLen = 0
-    for word in words:
-        word = strip(word)
-        ttlLen += len(word)
-        AvgWrdLth = ttlLen / len(words)
+    print("This program prints the average length of words in a sentence given by the user.")
+    sentence = input("What words do you want to average? ")
+    average = findLen(sentence)
+    print("There was an average of {0} characters per word.".format(average))
 
-    print('There were {0} words in that phrase.'.format(AvgWrdLth))
+def findLen(sentence):
+    total = 0
+    words = sentence.split(" ")
 
-def strip(word):
+    for i in range(len(words)):
+        letters = list(words[i])
 
-    stripped = ''
+        for letter in letters:
+            total = total + 1
 
-    for char in word.lower():
-        if char >= 'a' and char <= 'z':
-            stripped += char
-    return stripped
+    average = total / len(words)
+    return average
+
+main()
