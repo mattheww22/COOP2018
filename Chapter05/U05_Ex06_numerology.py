@@ -24,21 +24,22 @@
 #   print total of name
 
 def main():
-    name = input('What is your name?')
+    print("This program calculates the numeric value of your name.")
+    name = input('What is your name? ')
 
-    name = name.lower()
+    value = calcNumber(name)
+    print(value)
 
-    number = 0
-    a = 97
-    z = 123
+def calcNumber(name):
+    phr = name.lower()
+    phr = phr.strip()
+    phr = phr.split(" ")
+    value = 0
+    letter = "abcdefghijklmonpqrstuvwxyz"
+    for char in phr:
+        myPhr = myPhr[phr]
+        letterValue = letter.index(char)
+        value = value + letterValue
+    return value
 
-    length = name.lenth
-
-    for char in name:
-        alpha = ord(char)
-        if alpha >= a and alpha <= z:
-
-
-        Num += (alpha - 96)
-
-    print('The numeric value of {0} is: {1} '.format(name, Num))
+main()
