@@ -19,18 +19,17 @@ Program Description
 Algorithm
 
     Get string numbers from the user
-    Split strList into a list of strings
+    Split strList into a list of strings on space
     Send to toNumbers function
         transfer the str to int
         Return int list to main
-    print int
+    print ints
 """
 
 
 def main():
     print("This program turns a string given by the user into a number.")
-    strList = input("Please enter the numbers that you want to have converted. (separated by spaces) ")
-    strList = strList.split(" ")
+    strList = input("Please enter the numbers that you want to have converted. (separated by spaces) ").split(" ")
     toNumbers(strList)
     print("Your number(s) in integer form are: {0}".format(strList))
 
