@@ -1,9 +1,9 @@
 """
 U07_Ex06_Speeding.py
 
-  Author: 
+  Author: Matthew Wiggans
   Course: Coding for OOP
- Section: 
+ Section: A2
     Date: 2019-02-04
      IDE: PyCharm
 
