@@ -40,7 +40,6 @@ def main():
 
 
 def getPay(hour, wage):
-
     if hour > 40:
         hours = hour - 40
         fourty = 40 * wage
@@ -53,8 +52,8 @@ def getPay(hour, wage):
 
     return totalWage
 
-if __name__ == '__main__':
 
+if __name__ == '__main__':
     main()
 
 """
