@@ -1,9 +1,9 @@
 """
 U07_Ex12_dayChecker.py
 
-  Author: 
+  Author: Matthew Wiggans
   Course: Coding for OOP
- Section: 
+ Section: A2
     Date: 2019-02-21
      IDE: PyCharm
 
