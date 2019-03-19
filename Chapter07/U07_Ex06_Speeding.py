@@ -56,13 +56,12 @@ def speedCheck(limit, MPH):
         fine = 50
         over = MPH - limit
 
-        if over >= 90:
+        if MPH > 90:
             fine = over * 5
             fine = fine + 200
 
         else:
-
-            fine = over + fine
+            fine = over * 5 + fine
 
     else:
         fine = 1
